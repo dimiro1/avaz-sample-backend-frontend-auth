@@ -1,0 +1,22 @@
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username": "peter",
+  "password": "67890"
+}
+
+###
+
+POST http://localhost:5000/logout
+
+
+###
+
+GET http://localhost:5000/protected
+Cookie: session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGV0ZXIiLCJ1c2VybmFtZSI6InBldGVyIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzM5NTY1NX0.kWtktdbEaeVwXxggpE8WbkpgL74p2JqHqR_AfSmhO_w
+
+###
+
+GET http://localhost:5000/only-admin
+Cookie: session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGV0ZXIiLCJ1c2VybmFtZSI6InBldGVyIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzM5NTY1NX0.kWtktdbEaeVwXxggpE8WbkpgL74p2JqHqR_AfSmhO_w

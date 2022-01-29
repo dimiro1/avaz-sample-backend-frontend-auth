@@ -1,0 +1,22 @@
+{
+  "name": "avaz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "fast-jwt": "^1.4.1",
+    "fastify": "^3.27.0",
+    "fastify-cookie": "^5.5.0",
+    "fastify-cors": "^6.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
